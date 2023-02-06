@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90vw;
+    margin: auto;
+    position: relative;
+    top: 10vh;
+}
+.container h1{
+    background-color: rgba(0, 255, 0, 0);
+    font-size: 50vh;
+    letter-spacing: -19vh;
+    z-index: 2;
+    display: inline-block;
+    animation: jk 5s infinite;
+}
+.container h1 span{
+    background-color: rgba(143, 78, 78, 0);
+    z-index: 1;
+    display: inline-block;
+    color: transparent;
+    width: 50vh;
+    background-image: linear-gradient(35deg, transparent 0%,transparent 30%,red 35%,red 48%,transparent 49%,transparent 50%,purple 58%,blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: k 5s infinite;
+}
+@keyframes jk {
+    0%{
+        font-size: 5vh;
+        letter-spacing: normal;
+        z-index: 2;
+        text-align: center;
+    }
+    20%{
+        font-size: 50vh;
+        letter-spacing: normal;
+        z-index: 2;
+        display: inline-block;
+    }
+    100%{
+        font-size: 50vh;
+        letter-spacing: -19vh;
+        z-index: 2;
+        display: inline-block;
+    }
+}
+@keyframes k {
+    0%{
+        z-index: 1;
+        display: inline-block;
+        color: black;
+    }
+    15%{
+        z-index: 1;
+        display: inline-block;
+        color: black;
+    }
+    30%{
+        z-index: 1;
+        display: inline-block;
+        color: transparent;
+        background-image: linear-gradient(35deg,red 0%,red 48%,purple 55%,blue);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+    55%{
+        z-index: 1;
+        display: inline-block;
+        color: transparent;
+        width: 50vh;
+        background-image: linear-gradient(35deg, transparent 0%,transparent 30%,red 35%,red 48%,transparent 49%,transparent 50%,purple 58%,blue);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+    100%{
+        background-color: rgba(143, 78, 78, 0);
+        z-index: 1;
+        display: inline-block;
+        color: transparent;
+        width: 50vh;
+        background-image: linear-gradient(35deg, transparent 0%,transparent 30%,red 35%,red 48%,transparent 49%,transparent 50%,purple 58%,blue);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}
